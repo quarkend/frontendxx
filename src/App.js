@@ -62,7 +62,7 @@ function App() {
     }
   }, [])
   return (
-    <Router basename="http://quarkend.github.io/front/">
+    <Router basename="/">
       <AuthContext.Provider
         value={{
           state,
