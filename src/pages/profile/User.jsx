@@ -46,7 +46,7 @@ export default function User({ user }) {
   }
   async function handleUpdateProfileUsername(data) {
     const sendedUsername = await fetch(
-      "http://localhost:8800/api/users/" + user.id,
+      "https://power-bitter-airbus.glitch.me/users/" + user.id,
       {
         method: "put",
         headers: {
@@ -63,7 +63,7 @@ export default function User({ user }) {
   }
   async function handleUpdateProfileEmail(data) {
     const sendedEmail = await fetch(
-      "http://localhost:8800/api/users/" + user.id,
+      "https://power-bitter-airbus.glitch.me/users/" + user.id,
       {
         method: "put",
         headers: {
