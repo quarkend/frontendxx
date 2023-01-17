@@ -31,7 +31,7 @@ export default function Profile() {
     const formData = new FormData();
     formData.append("image", data.image[0]);
     const sendPhoto = await fetch(
-      `${"https://power-bitter-airbus.glitch.me/profile"}/${storage.id}`,
+      `${"https://www.fullpod.tk/profile"}/${storage.id}`,
       {
         method: "put",
         headers: {
@@ -50,7 +50,7 @@ export default function Profile() {
     console.log(data);
     // const { userId } = storage
     //     const sendedEmail = await fetch(
-    //       "https://power-bitter-airbus.glitch.me/profile/" + storage.id,
+    //       "https://www.fullpod.tk/profile/" + storage.id,
     //       {
     //         method: "put",
     //         headers: {
@@ -67,7 +67,7 @@ export default function Profile() {
   }
   async function handleUpdateProfileUsername(data) {
     const sendedUsername = await fetch(
-      `${"https://power-bitter-airbus.glitch.me/profile"}/${storage.id}`,
+      `${"https://www.fullpod.tk/profile"}/${storage.id}`,
       {
         method: "put",
         headers: {
@@ -84,7 +84,7 @@ export default function Profile() {
     console.log(response);
   }
   async function getUserData() {
-    const URL = `${"https://power-bitter-airbus.glitch.me/profile/"}${userId}`;
+    const URL = `${"https://www.fullpod.tk/profile/"}${userId}`;
     const data = await fetch(URL, {
       headers: {
         Authorization: "Bearer " + token,

@@ -1,8 +1,8 @@
 {
-  "homepage": "https://www.hinafi.tk/",
+
   "name": "front",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@hookform/resolvers": "^2.8.8",
@@ -61,8 +61,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }

@@ -11,7 +11,7 @@ import UpdateProfilePhoto from "./../../pages/profile/UpdateProfilePhoto";
 import { Chat, Cancel } from "@material-ui/icons";
 import MenuDots from "../menuBurger/MenuDots";
 // import Comment from './../comment/Comment';
-const USER_INFO_URL = "https://power-bitter-airbus.glitch.me/users/";
+const USER_INFO_URL = "https://www.fullpod.tk/users/";
 const url = "http://localhost:8800/images/";
 export default function Post({ post }) {
   const { handleSubmit, register } = useForm();
@@ -126,7 +126,7 @@ export default function Post({ post }) {
   // if(conf)
   const deletePost = (id) => {
     axios
-      .delete(`https://power-bitter-airbus.glitch.me/posts/${id}`, {
+      .delete(`https://www.fullpod.tk/posts/${id}`, {
         headers: { Authorization: token },
       })
 
@@ -143,7 +143,7 @@ export default function Post({ post }) {
     formData.append("image", data.image[0]);
     console.log(data.image[0]);
     const sendPhoto = await fetch(
-      "https://power-bitter-airbus.glitch.me/posts/upimg/" + post.id,
+      "https://www.fullpod.tk/posts/upimg/" + post.id,
       {
         method: "PUT",
         headers: {

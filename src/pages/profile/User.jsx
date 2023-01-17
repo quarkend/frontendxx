@@ -46,7 +46,7 @@ export default function User({ user }) {
   }
   async function handleUpdateProfileUsername(data) {
     const sendedUsername = await fetch(
-      "https://power-bitter-airbus.glitch.me/users/" + user.id,
+      "https://www.fullpod.tk/users/" + user.id,
       {
         method: "put",
         headers: {
@@ -63,7 +63,7 @@ export default function User({ user }) {
   }
   async function handleUpdateProfileEmail(data) {
     const sendedEmail = await fetch(
-      "https://power-bitter-airbus.glitch.me/users/" + user.id,
+      "https://www.fullpod.tk/users/" + user.id,
       {
         method: "put",
         headers: {
