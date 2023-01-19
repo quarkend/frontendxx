@@ -1,2 +1,2 @@
 FROM hinafi/frontend
-RUN npm ` --omit = dev`
+RUN npm `--omit=dev`
